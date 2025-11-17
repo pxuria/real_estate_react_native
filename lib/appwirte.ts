@@ -94,6 +94,18 @@ export async function getCurrentUser() {
 }
 
 export async function getLatestProperties() {
+    try {
+        const res = await databases.listDocuments(
+            config.databaseId!,
+            config.propertiesCollectionId!,
+            [Query.orderAsc('$createdAt'), Query.limit(5)]
+        );
+
+        return res.documents;
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
 }
 
 export async function getProperties({

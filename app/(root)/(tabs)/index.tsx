@@ -27,9 +27,7 @@ const Home = () => {
   const params = useLocalSearchParams<{ query?: string; filter?: string }>();
 
   const { data: latestProperties, loading: latestPropertiesLoading } =
-    useAppwrite({
-      fn: getLatestProperties,
-    });
+    useAppwrite({ fn: getLatestProperties });
 
   const {
     data: properties,
