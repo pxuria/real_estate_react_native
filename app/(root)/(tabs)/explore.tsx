@@ -36,9 +36,6 @@ const Explore = () => {
     });
 
     useEffect(() => {
-        // console.log(params.query)
-        // console.log(params.filter)
-        // console.log(properties)
         refetch({
             filter: params.filter!,
             query: params.query!,

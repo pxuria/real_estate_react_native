@@ -38,7 +38,6 @@ const Property = () => {
         )
     }
 
-    console.log(property)
     return (
         <View>
             <ScrollView
