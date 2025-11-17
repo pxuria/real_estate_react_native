@@ -15,11 +15,10 @@ export const config = {
     endpoint: process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT,
     project_id: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID,
     databaseId: process.env.EXPO_PUBLIC_APPWRITE_DATABASE_ID,
-    galleriesCollectionId: process.env.EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID,
-    reviewsCollectionId: process.env.EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID,
-    agentsCollectionId: process.env.EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID,
-    propertiesCollectionId:
-        process.env.EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID,
+    galleriesCollectionId: process.env.EXPO_PUBLIC_APPWRITE_GALLERIES_TABLE,
+    reviewsCollectionId: process.env.EXPO_PUBLIC_APPWRITE_REVIEWS_TABLE,
+    agentsCollectionId: process.env.EXPO_PUBLIC_APPWRITE_AGENTS_TABLE,
+    propertiesCollectionId: process.env.EXPO_PUBLIC_APPWRITE_PROPERTIES_TABLE,
     bucketId: process.env.EXPO_PUBLIC_APPWRITE_BUCKET_ID,
 };
 
